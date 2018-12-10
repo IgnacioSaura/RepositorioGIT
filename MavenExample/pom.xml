@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>source.web.java</groupId>
+  <artifactId>MavenExample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <name>MavenExample</name>
+ 
+  <build>
+  <plugins>
+  <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-jar-plugin</artifactId>
+  <version>3.1.0</version>
+  <configuration>
+  <archive>
+  <manifest>
+  <addClasspath>True</addClasspath>
+  <classpathPrefix>lib/</classpathPrefix>
+  <mainClass>com.globant.bootcamps.nacho.SimpleSampleApplication</mainClass>
+  </manifest>
+  </archive>
+  </configuration>
+  </plugin>
+  </plugins>
+  <finalName>Maven Sample</finalName>
+   </build>
+  <!-- Project Repositories  -->
+  <repositories>
+ <repository>
+<id>first-repo</id>
+ <name>Create and build a simple Maven project</name>
+ <url>http://central.maven.org/maven2/</url>
+ </repository>
+ </repositories>
+ 
+ <dependencies>
+ <dependency>
+ <groupId>log4j</groupId>
+ <artifactId>log4j</artifactId>
+ <version>1.2.17</version>
+ 
+ </dependency>
+ </dependencies>
+  <description>Create and build a simple Maven project</description>
+</project>
+
+
+
+
